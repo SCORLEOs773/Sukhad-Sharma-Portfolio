@@ -7,7 +7,7 @@ export default function Navbar() {
     <Flex
       align="center"
       justify="space-between"
-      bg="linear-gradient(to bottom, teal, white)"
+      bg="linear-gradient(to bottom, teal, transparent)" // Updated background style
       p={4}
       color="white"
       backgroundSize="cover"
@@ -24,19 +24,27 @@ export default function Navbar() {
         mx="auto"
       >
         <TabList>
-          <Tab ml={20} p={2} fontSize="lg" color="gray.200">
+          <Tab ml={20} p={2} fontSize="lg" color="teal.700" fontWeight="bold">
             <Link to="/">Home</Link>
           </Tab>
-          <Tab ml={20} p={2} fontSize="lg" color="gray.200">
+          <Tab ml={20} p={2} fontSize="lg" color="teal.700" fontWeight="bold">
             <Link to="/projects">Projects</Link>
           </Tab>
-          <Tab ml={20} p={2} fontSize="lg" color="gray.200">
+          <Tab ml={20} p={2} fontSize="lg" color="teal.700" fontWeight="bold">
             <Link to="/about">About</Link>
           </Tab>
-          <Tab ml={20} mr={20} p={2} fontSize="lg" color="gray.200">
+          <Tab
+            ml={20}
+            mr={20}
+            p={2}
+            fontSize="lg"
+            color="teal.700"
+            fontWeight="bold"
+          >
             <Link to="/contact">Contact</Link>
           </Tab>
         </TabList>
+
         <TabIndicator
           mt="-1.5px"
           height="2px"
